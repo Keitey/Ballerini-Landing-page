@@ -1,0 +1,184 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    font-family: 'Sarala', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 100%;
+    background: linear-gradient(to right, #c625dc, #a546e7, #8159ed, #5765ee, #126eeb);
+}
+
+nav a:hover{
+    color: #A01B62;
+}
+
+.menu:hover{
+    transform: scale(1.2);
+}
+
+.menu{
+    display: flex;
+    gap: 32px;
+}
+
+.menu-item{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 18px;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.logo{
+    height: 72px;
+}
+
+.container{
+    border-top: 0.4px solid white;
+    margin-bottom: 48px;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 32px;
+}
+
+h1
+
+{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+h2{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 34px;
+}
+
+.btn{
+    background-color: #D2C4DE;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #D5378B;
+    width: 185px;
+    height: 60px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    border: none;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.container-image{
+    height: 430px;
+}
+
+.container-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+h3{
+    border-top: 0.4px solid white;
+    padding-top: 48px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+p{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #F1EDF7;
+}
+
+.rodape{
+    padding: 32px;
+    border-top: 0.4px solid white;
+}
+
+.rodape-image{
+    height: 48px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 767.98px) {
+    .container-principal{
+        width: min-content;
+    }
+
+    .container-secundario{
+        width: 80%;
+    }
+}
+
+@media (max-width: 575.98px) {
+    body{
+        background:#a546e7;
+    }
+
+    .cabecalho{
+        display: block;
+    }
+
+    .logo{
+        display: block;
+    }
+
+    .menu{
+        flex-direction: column;
+        gap: 16px;
+        margin-top: 20px;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .container-image{
+        height: 280px;
+    }
+
+    .container-principal{
+        flex-wrap: wrap;
+    }
+
+    .menu-item{
+        font-size: 25px;
+    }
+
+    h1{
+        margin-top: 20px;
+        font-size: 56px;
+    }
+}
